@@ -1,0 +1,86 @@
+#cabecalho {
+    text-align: center;
+    font-family: 'Lato';
+}
+
+#formulario-adicionar-contato {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#formulario-adicionar-contato input {
+    display: block;
+    margin: 0 auto;
+}
+
+#input-formulario-adicionar-contato {
+    padding: 5px;
+    width: 50%;
+    margin-bottom: 5px !important;
+}
+
+#botao-formulario-adicionar-contato {
+    padding: 5px;
+    width: 20%;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(20, 103, 228);
+    
+}
+
+#inputFiltro {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(241, 243, 245);
+    border: 0;
+    border-bottom: 1px solid rgb(205, 228, 255);
+}
+
+#lista-contatos {
+    padding-left: 0;
+    list-style-type: none;
+    font-family: 'Arial';
+}
+
+/*
+#lista-contatos li {
+    padding: 5px;
+}
+*/
+
+#lista-contatos a {
+    text-decoration: none;
+    color: rgb(20, 103, 228);
+}
+
+.secao-lista {
+    background-color: rgb(246, 248, 250);
+}
+
+.cabecalho-lista {
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.secao-lista ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.secao-lista li {
+    background-color: #FFF;
+    padding: 5px;
+}
+
+.secao-lista li:hover {
+    background-color: rgb(242, 246, 248);
+}
+
+.secao-lista a {
+    display: block;
+    width: 100%;
+}
+
+

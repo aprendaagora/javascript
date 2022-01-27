@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de Senhas</h2>
+
+        <div class="container-resultado">
+            <span id="resultado" class="resultado"></span>
+            <button class="botao" id="clipboard">
+                Copiar
+            </button>
+        </div>
+
+        <div class="configuracoes">
+            <div class="configuracao">
+                <label for="comprimento">Comprimento da senha</label>
+                <input id="comprimento" type="number" name="comprimento" min="4" max="20" value="20">
+            </div>
+
+            <div class="configuracao">
+                <label for="minusculas">Inclui letras minúsculas</label>
+                <input id="minusculas" type="checkbox" name="minusculas" checked>
+            </div>
+
+            <div class="configuracao">
+                <label for="maiusculas">Inclui letras maiúsculas</label>
+                <input id="maiusculas" type="checkbox" name="maiusculas" checked>
+            </div>
+
+            <div class="configuracao">
+                <label for="numeros">Inclui números</label>
+                <input id="numeros" type="checkbox" name="numeros" checked>
+            </div>
+
+            <div class="configuracao">
+                <label for="simbolos">Inclui símbolos</label>
+                <input id="simbolos" type="checkbox" name="simbolos" checked>
+            </div>
+        </div>
+
+        <button class="botao botao-largo" id="gerar">
+            Gerar senha
+        </button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

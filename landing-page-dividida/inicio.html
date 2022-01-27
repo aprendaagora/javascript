@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Dividida</title>
+
+    <!--<link rel="stylesheet" href="style.css">-->
+
+
+    <style>
+        :root {
+            --container-bg-color: #333;
+            --esquerda-bg-color: rgba(223, 39, 39, 0.7);
+            --esquerda-buttom-hover-color: rgba(161, 11, 11, 0.3);
+            --direita-bg-color: rgba(43, 43, 43, 0.8);
+            --direita-buttom-hover-color: rgba(92, 92, 92, 0.3);
+            --hover-width: 75%;
+            --other-width: 25%;
+            --velocidade: 1000ms;
+        }
+
+
+        html, body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'sans-serif';
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+
+
+        .botao {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            height: 2.5rem;
+            padding-top: 1.3rem;
+            width: 15rem;
+            text-align: center;
+            color: #fff;
+            border: #fff solid 0.2rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            transform: translateX(-50%);
+        }
+
+
+        .metade.esquerda .botao:hover {
+            background-color: var(--esquerda-bg-color);
+            border-color: var(--esquerda-button-hover-color);
+        }
+
+        .metade.direita .botao:hover {
+            background-color: var(--direita-bg-color);
+            border-color: var(--direita-button-hover-color);
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: var(--container-bg-color);
+        }
+
+
+        .metade {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+
+        .metade.esquerda {
+            left: 0;
+            background: url('imagens/rosto1.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        .metade.esquerda:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: var(--esquerda-bg-color);
+        }
+
+        .metade.direita {
+            right: 0;
+            background: url('imagens/rosto2.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        .metade.direita:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: var(--direita-bg-color);
+        }
+
+        .metade.esquerda, .metade.direita, .metade.direita:before, .metade.esqueda:before {
+            transition: var(--velocidade) all ease-in-out;
+        }
+
+
+
+        .hover-esquerda .esquerda {
+            width: var(--hover-width);
+        }
+
+        .hover-esquerda .direita {
+            width: var(--other-width);
+        }
+
+        .hover-esquerda .direita:before {
+            z-index: 2;
+        }
+
+
+
+        .hover-direita .direita {
+            width: var(--hover-width);
+        }
+
+        .hover-direita .esquerda {
+            width: var(--other-width);
+        }
+
+        .hover-direita .esquerda:before {
+            z-index: 2;
+        }
+
+
+
+        @media(max-width: 800px) {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .botao {
+                width: 12rem;
+            }
+        }
+
+
+        @media(min-height: 700px) {
+            .botao {
+                top: 70%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="metade esquerda">
+            <h1>Os Produtos</h1>
+            <a href="" class="botao">Ler Mais</a>
+        </div>
+
+        <div class="metade direita">
+            <h1>Os Serviços</h1>
+            <a href="" class="botao">Ler Mais</a>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

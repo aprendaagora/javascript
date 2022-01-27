@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lista Filtrável</title>
+
+    <link rel='stylesheet' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+
+<div class='container'>
+    <h1 id='cabecalho'>Meus Contatos</h1>
+
+
+    <form id='formulario-adicionar-contato'>
+        <input id='input-formulario-adicionar-contato' type='text' placeholder='Digite o nome do contato...'>
+        <input id='botao-formulario-adicionar-contato' type='submit' value='Adicionar'>
+    </form>
+
+
+
+    <input id='inputFiltro' type='text' placeholder='Pesquise um contato'>
+
+    <ul id='lista-contatos'>
+
+        <li data-letra='a' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>A</span>
+            
+            <ul>
+                <li class='item-lista'><a href=''>Ana <span class='botao-apagar-contato' style='font-weight: bold; float: right; display: inline-block; width: 1em; text-align: center; color: white; background-color: red; border-radius: 0.25em;'>-</span></a></li>
+                <li class='item-lista'><a href=''>Arlindo<span class='botao-apagar-contato' style='font-weight: bold; float: right; display: inline-block; width: 1em; text-align: center; color: white; background-color: red; border-radius: 0.25em;'>-</span></a></li>
+                <li class='item-lista'><a href=''>André<span class='botao-apagar-contato' style='font-weight: bold; float: right; display: inline-block; width: 1em; text-align: center; color: white; background-color: red; border-radius: 0.25em;'>-</span></a></li>
+                <li class='item-lista'><a href=''>Alex<span class='botao-apagar-contato' style='font-weight: bold; float: right; display: inline-block; width: 1em; text-align: center; color: white; background-color: red; border-radius: 0.25em;'>-</span></a></li>
+            </ul>
+        </li>
+
+        <li data-letra='b' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>B</span>
+            
+            <ul>
+                <li class='item-lista'><a href=''>Bruno</a></li>
+                <li class='item-lista'><a href=''>Bianca</a></li>
+                <li class='item-lista'><a href=''>Beto</a></li>
+            </ul>
+        </li>
+
+        <li data-letra='c' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>C</span>
+            
+            <ul>
+                <li class='item-lista'><a href=''>Carlos</a></li>
+                <li class='item-lista'><a href=''>Caique</a></li>
+                <li class='item-lista'><a href=''>Carla</a></li>
+            </ul>
+        </li>
+
+        <li data-letra='d' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>D</span>
+            
+            <ul>
+                <li class='item-lista'><a href=''>Daniel</a></li>
+                <li class='item-lista'><a href=''>Denise</a></li>
+                <li class='item-lista'><a href=''>Durval</a></li>
+            </ul>
+        </li>
+
+        <li data-letra='e' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>E</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='f' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>F</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='g' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>G</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='h' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>H</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='i' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>I</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='j' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>J</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='k' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>K</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='l' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>L</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='m' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>M</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='n' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>N</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='o' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>O</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='p' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>P</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='q' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>Q</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='r' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>R</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='s' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>S</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='t' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>T</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='u' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>U</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='v' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>V</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='w' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>W</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='x' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>X</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='y' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>Y</span>
+            
+            <ul>
+            </ul>
+        </li>
+
+        <li data-letra='z' class='secao-lista'>
+            
+            <span class='cabecalho-lista'>Z</span>
+            
+            <ul>
+            </ul>
+        </li>
+    </ul>
+</div>   
+
+</body>
+</html>

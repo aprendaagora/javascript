@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Web Components</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <!--
+        <script src="CartaoUsuario.js"></script>
+    -->
+
+</head>
+<body>
+
+    <h1>Notificacao</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <notificacao-popup
+            mensagem-fundo="#ffcc00"
+            mensagem-cor="#666"
+        >
+            <span slot="mensagem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, modi.</span>
+        </notificacao-popup>
+    Id adipisci ipsum reiciendis ab. Ratione, ipsam?</p>
+
+    
+
+    <cartao-usuario nome="Ramon Omero" avatar="imagens/rosto1.jpg">
+        <div slot="email">ramonfrombr@gmail.com</div>
+        <div slot="telefone">(27) 987654321</div>
+    </cartao-usuario>
+
+    <my-contador contagem="10"></my-contador>
+
+
+    <article contenteditable="">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, saepe.</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, optio molestias! Eos, exercitationem iure. Eveniet harum reprehenderit alias voluptas autem magni quis, cum maiores, ut exercitationem amet quisquam officiis porro.</p>
+        
+        <contador-palavras></contador-palavras>
+    </article>
+
+    <article>
+        <h2>Exemplo de Turbo Stream</h2>
+        <div id="article"></div>
+    </article>
+
+    <turbo-stream acao="update" target="article">
+        <template>
+            olá, mundo!
+        </template>
+    </turbo-stream>
+
+    <!--
+    <cartao-usuario nome="Ramon Omero"></cartao-usuario>
+    <cartao-usuario nome="João Silva"></cartao-usuario>
+    -->
+
+    <script src="NotificacaoPopup.js"></script>
+    <script src="CartaoUsuario.js"></script>
+    <script src="Contador.js"></script>
+    <script src="ContadorPalavras.js"></script>
+
+
+</body>
+</html>

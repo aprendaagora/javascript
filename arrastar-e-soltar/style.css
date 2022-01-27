@@ -1,0 +1,43 @@
+body {
+    background: grey;
+}
+
+.vazio {
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: 3px salmon solid;
+    background-color: black;
+
+
+}
+
+.preenchido {
+    background-image: url('./eye.png');
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.hold {
+    border: solid #ccc 4px;
+}
+
+.hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+}
+
+.invisivel {
+    display: none;
+}
+
+
+
